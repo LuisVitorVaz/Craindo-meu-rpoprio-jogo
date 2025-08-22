@@ -10,4 +10,17 @@ function adicionarAmigo() {
     }
     amigoSecretoNome.push(nome);   // adiciona no array
     console.log(amigoSecretoNome); // mostra todos já adicionados
+
+       listaDeamigos();
+}
+function listaDeamigos() {
+    let lista = document.querySelector('#listaAmigos');
+    lista.innerHTML = ""; // limpa a lista antes de mostrar
+
+    for (let i = 0; i < amigoSecretoNome.length; i++) {
+
+        let item = document.createElement("li");
+        item.textContent = amigoSecretoNome[i];
+        lista.appendChild(item);
+    }
 }

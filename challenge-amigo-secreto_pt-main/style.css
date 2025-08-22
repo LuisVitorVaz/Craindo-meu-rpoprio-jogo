@@ -8,6 +8,29 @@
     --color-white: #FFFFFF;
 }
 
+.name-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 30px 0; /* Mais espaço em cima e embaixo */
+    color: green; /* Cor verde para os nomes */
+}
+
+.name-list li {
+    list-style: none;
+    margin-right: 5px;
+    color: green; /* Garantindo que cada li seja verde */
+}
+
+.name-list li::after {
+    content: ", ";
+    color: green; /* Vírgulas também verdes */
+}
+
+.name-list li:last-child::after {
+    content: "";
+}
+
 /* Estilos gerais */
 * {
     margin: 0;

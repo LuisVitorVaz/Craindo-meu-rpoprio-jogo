@@ -3,6 +3,11 @@ let amigoSecretoNome = [];
 
 function adicionarAmigo() {
     let nome = document.querySelector("#amigo").value;
+    if( nome === "")
+    {
+        alert("Digite o nome do amigo secreto");
+        return;
+    }
     amigoSecretoNome.push(nome);   // adiciona no array
     console.log(amigoSecretoNome); // mostra todos já adicionados
 }

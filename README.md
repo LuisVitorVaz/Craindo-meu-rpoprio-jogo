@@ -1,19 +1,80 @@
-# Meu Jogo Secreto
+# 📊 Telecom X — Análise de Evasão de Clientes (Churn)
 
-## 📌 Sobre
-Este é o jogo do amigo secreto que tem como objetivo praticar a lógica de programação vista durante o curso.
-A criação deste jogo, no caso a programação lógica, foi baseada no jogo de adivinhar o número secreto.
-Usando os conhecimentos ensinados, foi criada a parte de captura dos dados. Basicamente, 
-todo o JavaScript foi criado contendo 3 funções principais: adicionar amigo que captura o
-nome digitado pelo usuário e guarda em um array, lista de amigos exibe a cada amigo adicionado seu nome
-e exibido abaixo do campo de digitação do nome, e a função sortear amigo que é responsável por gerar um número aleatório 
-e este número é associado ao nome da pessoa de acordo com o número sorteado e a seleção do número sendo o número usado não podendo ser usado novamente até reiniciar o sorteio.
+## 📌 Visão Geral
 
-📌 Tecnologias
-<div>
-  <img src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white">
-  <img src="https://img.shields.io/badge/CSS-239120?style=for-the-badge&logo=css3&logoColor=white">
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
-</div>
-📌 Autor
-LuisVitorVaz - GitHub
+Este projeto tem como objetivo analisar os fatores que influenciam a evasão de clientes (Churn) da empresa **Telecom X**.  
+A partir de dados reais disponibilizados via API/JSON, foi realizada uma análise exploratória completa para identificar padrões de comportamento associados ao cancelamento de serviços.
+
+Os insights obtidos neste projeto podem apoiar a equipe de Data Science no desenvolvimento de modelos preditivos e estratégias de retenção de clientes.
+
+---
+
+## 🎯 Objetivo do Projeto
+
+- Entender o perfil dos clientes que cancelam o serviço
+- Identificar variáveis com maior impacto no churn
+- Explorar padrões de comportamento por meio de visualizações
+- Preparar os dados para futuras etapas de modelagem preditiva
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+- **Python**
+- **Pandas**
+- **NumPy**
+- **Matplotlib**
+- **Seaborn**
+- **Jupyter Notebook**
+
+---
+
+## 🔄 Etapas do Projeto
+
+### 1️⃣ Extração de Dados (ETL)
+- Coleta dos dados a partir de um arquivo JSON hospedado no GitHub
+- Leitura e normalização da estrutura dos dados
+
+### 2️⃣ Limpeza e Tratamento
+- Verificação e tratamento de valores ausentes
+- Remoção de registros duplicados
+- Padronização de colunas e categorias
+- Conversão de variáveis categóricas em formato numérico
+- Criação da variável **Contas_Diarias**
+
+### 3️⃣ Análise Exploratória de Dados (EDA)
+- Análise descritiva das variáveis
+- Distribuição da variável churn
+- Comparação do churn por variáveis categóricas
+- Análise de variáveis numéricas em relação à evasão
+- Visualizações gráficas para identificação de padrões
+
+### 4️⃣ Análises Extras
+- Análise de correlação entre variáveis numéricas
+- Exploração da relação entre gastos e evasão
+
+---
+
+## 📊 Principais Insights
+
+- Clientes com **contratos mensais** apresentam maior taxa de churn
+- Clientes com **baixo tempo de permanência** são mais propensos ao cancelamento
+- Gastos mensais mais elevados mostram relação com maior evasão
+- O método de pagamento influencia o comportamento de churn
+
+---
+
+## 📌 Recomendações
+
+- Incentivar contratos de longo prazo com benefícios exclusivos
+- Criar ações de retenção focadas nos primeiros meses do cliente
+- Monitorar clientes com alto gasto mensal
+- Oferecer programas de fidelidade progressivos
+
+---
+
+## ▶️ Como Executar o Projeto
+
+### 1️⃣ Clonar o repositório
+```bash
+git clone https://github.com/alura-cursos/challenge2-data-science.git
